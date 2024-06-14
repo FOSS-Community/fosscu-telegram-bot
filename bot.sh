@@ -11,28 +11,24 @@ source util.sh
 # Source functions
 source bot/all_replace.sh
 source bot/calc.sh
-source bot/choice.sh
+source bot/fun/choice.sh
 source bot/github.sh
 source bot/info.sh
-source bot/iq.sh
+source bot/fun/iq.sh
 source bot/log_dump.sh
-source bot/neofetch.sh
-source bot/pfp.sh
-source bot/purge.sh
-source bot/replace.sh
+source bot/extra/neofetch.sh
+source bot/extra/pfp.sh
+source bot/extra/purge.sh
+source bot/fun/replace.sh
 source bot/reset_log.sh
-source bot/round.sh
+source bot/extra/round.sh
 source bot/start.sh
-source bot/shuffle.sh
+source bot/fun/shuffle.sh
 source bot/weath.sh
 source bot/bot_util.sh
-source bot/shell.sh
+source bot/extra/shell.sh
 
 log -i tgbot "STARTING BOT"
-
-
-# Defining constan# Initialize update
-update_init
 
 ## While loop
 while true; do
