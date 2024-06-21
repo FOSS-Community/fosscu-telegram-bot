@@ -47,11 +47,11 @@ while true; do
     '.all_replace'*) all_replace  | tee -a log ;;
     '.calc'*) calc  | tee -a log ;;
     '.choice'*) choice  | tee -a log ;;
-    '.iq'*) iq  | tee -a log ;;
-    '.info'*) info  | tee -a log ;;
+    '/iq'*) iq  | tee -a log ;;
+    '/info'*) info  | tee -a log ;;
     '/issues'*) send_open_issues ;;
-    '.neofetch'*) neo_fetch  | tee -a log ;;
-    '.pfp'*) pfp | tee -a log ;;
+    '/neofetch'*) neo_fetch  | tee -a log ;;
+    '/pfp'*) pfp | tee -a log ;;
     '.replace'*) replace  | tee -a log ;;
     '.round'*) round_msg | tee -a log;;
     '.weath'*) weath  | tee -a log ;;
