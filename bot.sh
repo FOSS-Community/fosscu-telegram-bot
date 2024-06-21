@@ -20,6 +20,7 @@ source bot/extra/neofetch.sh
 source bot/extra/pfp.sh
 source bot/extra/purge.sh
 source bot/fun/replace.sh
+source bot/help.sh
 source bot/reset_log.sh
 source bot/extra/round.sh
 source bot/start.sh
@@ -42,17 +43,18 @@ while true; do
     case $RET_LOWERED_MSG_TEXT in
 
     '/start'*) start | tee -a log ;;
+    '/help'*) help_msg | tee -a log ;;
     '.all_replace'*) all_replace  | tee -a log ;;
     '.calc'*) calc  | tee -a log ;;
     '.choice'*) choice  | tee -a log ;;
-    '.iq'*) iq  | tee -a log ;;
-    '.info'*) info  | tee -a log ;;
+    '/iq'*) iq  | tee -a log ;;
+    '/info'*) info  | tee -a log ;;
     '/issues'*) send_open_issues ;;
-    '.neofetch'*) neo_fetch  | tee -a log ;;
-    '.pfp'*) pfp | tee -a log ;;
+    '/neofetch'*) neo_fetch  | tee -a log ;;
+    '/pfp'*) pfp | tee -a log ;;
     '.replace'*) replace  | tee -a log ;;
     '.round'*) round_msg | tee -a log;;
-    '.weath'*) weath  | tee -a log ;;
+    '/weath'*) weath  | tee -a log ;;
     '.log'*) log_dump ;;
     '/members'*) send_members ;;
     '/prs'*) send_open_pull_requests ;;
