@@ -1,7 +1,7 @@
 #!/bin/bash
 
 weath() {
-    TRIMMED=${RET_MSG_TEXT#.weath}
+    TRIMMED=${RET_MSG_TEXT#/weath}
     local key=$(echo "${WEATH_API_KEY}" | tr -d '\n' | wc -c)
     if [ "$key" -lt 50 ]; then
         log -e weath "Api key is wrong or not found. Please add api key in .token.sh"
@@ -9,7 +9,7 @@ weath() {
         if [ -z "${TRIMMED}" ]; then
             tg --replymsg "$RET_CHAT_ID" "$RET_MSG_ID" "Please provide a legit location."
         else
-            location=${RET_MSG_TEXT#.weath }
+            location=${RET_MSG_TEXT#/weath }
             RESULT=$(curl -s --request GET \
                 --url "https://yahoo-weather5.p.rapidapi.com/weather?location=${location}&format=json&u=c" \
                 --header 'x-rapidapi-host: yahoo-weather5.p.rapidapi.com' \

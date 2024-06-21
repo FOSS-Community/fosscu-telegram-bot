@@ -54,7 +54,7 @@ while true; do
     '/pfp'*) pfp | tee -a log ;;
     '.replace'*) replace  | tee -a log ;;
     '.round'*) round_msg | tee -a log;;
-    '.weath'*) weath  | tee -a log ;;
+    '/weath'*) weath  | tee -a log ;;
     '.log'*) log_dump ;;
     '/members'*) send_members ;;
     '/prs'*) send_open_pull_requests ;;

@@ -12,6 +12,7 @@ This bot offers the following commands:
 \- /prs \: Shows open pull requests in the organization\.
 \- /info \: Fetches and displays information about the replied telegram user\.
 \- /pfp \: Downloads the profile picture of the replied telegram user\.
+\- /weath \<location\> \: Gives weather details of the specified location\.
 \- /iq \: Calculates and displays a fun IQ score\.
 
 Feel free to use these commands to interact with the bot\!
