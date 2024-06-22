@@ -17,6 +17,7 @@ source bot/info.sh
 source bot/fun/iq.sh
 source bot/log_dump.sh
 source bot/extra/neofetch.sh
+source bot/paste.sh
 source bot/extra/pfp.sh
 source bot/extra/purge.sh
 source bot/fun/replace.sh
@@ -52,6 +53,7 @@ while true; do
     '/issues'*) send_open_issues ;;
     '/neofetch'*) neo_fetch  | tee -a log ;;
     '/pfp'*) pfp | tee -a log ;;
+    '/paste'*) paste | tee -a log ;;
     '.replace'*) replace  | tee -a log ;;
     '.round'*) round_msg | tee -a log;;
     '/weath'*) weath  | tee -a log ;;
