@@ -18,6 +18,7 @@ FOSSCU-K Bot is a Telegram bot written in Bash that interacts with GitHub to fet
 - `/start`: Display the help message
 - `/issues`: Fetch and display open issues
 - `/prs`: Fetch and display pull requests
+- `/paste`: Use FOSSCU paste api to paste replied message
 - `/members`: Fetch and display organization members
 
 ## Installation
@@ -61,6 +62,7 @@ FOSSCU-K Bot is a Telegram bot written in Bash that interacts with GitHub to fet
     - Send `/start` to display the help message.
     - Send `/issues` to fetch and display open issues.
     - Send `/prs` to fetch and display pull requests.
+    - Reply `/paste` to paste given message via fosscu paste api.
     - Send `/members` to fetch and display organization members.
 
 ## Directory Structure

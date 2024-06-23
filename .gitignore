@@ -1,4 +1,5 @@
 .token.sh
 log
 util_test.sh
+paste_*
 bot.log
